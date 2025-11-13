@@ -3,6 +3,7 @@
 # Import Modules
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor as DTS
+import matplotlib.pyplot as plt
 
 # Gather Data from file
 # Load CSV File
@@ -37,3 +38,6 @@ for i in range(len(predictions)):
     predicted = predictions[i]
     actual = y.iloc[i]
     print(f"{student_id:<15} {predicted:<20.2f} {actual:<15.2f}")
+    plt.plot(student_id, predicted, marker='o', label="Predicted")
+    plt.plot(student_id, actual, marker='x', label="Actual")
+plt.show()
