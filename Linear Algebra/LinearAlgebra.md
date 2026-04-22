@@ -1,0 +1,1 @@
+The purpose of this folder is to solve several different linear alegbra problems both using general arithmetic and numpy/sympy to get a better feel for linear algebra (and also to check my work).
